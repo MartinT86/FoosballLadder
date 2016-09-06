@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "c:\\Practice\\react-tutorial\\src\\build";
+/******/ 	__webpack_require__.p = "src/build";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -21472,7 +21472,7 @@
 	         return _react2.default.createElement(
 	            'div',
 	            null,
-	            'Hello World!!!'
+	            'Hello World!!! Set up'
 	         );
 	      }
 	   }]);
