@@ -1,12 +1,13 @@
 import React from 'react';
 import Player from './Player.jsx'
+import AddPlayerForm from './AddPlayerForm.jsx'
 
 class Ladder extends React.Component {
     constructor(props){
         super(props);
 
         this.state = {
-            players : ['Player One', 'Player Two']
+            players : ['Player One', 'Player Two', 'Player Three']
         }
     }
 
@@ -19,6 +20,7 @@ class Ladder extends React.Component {
                     <Player name={player} key={i}/>
                 )
             })}
+            <AddPlayerForm/>
          </div>
       );
    }
