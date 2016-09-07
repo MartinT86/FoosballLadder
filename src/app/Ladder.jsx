@@ -9,6 +9,14 @@ class Ladder extends React.Component {
         this.state = {
             players : ['Player One', 'Player Two', 'Player Three']
         }
+
+        this.addPlayer = this.addPlayer.bind(this);
+    }
+
+    addPlayer(newPlayer){
+        var newPlayers = this.state.players;
+        newPlayers.push(newPlayer);
+        this.setState({players:newPlayers});
     }
 
    render() {
@@ -20,7 +28,7 @@ class Ladder extends React.Component {
                     <Player name={player} key={i}/>
                 )
             })}
-            <AddPlayerForm/>
+            <AddPlayerForm addPlayerProp={this.addPlayer}/>
          </div>
       );
    }

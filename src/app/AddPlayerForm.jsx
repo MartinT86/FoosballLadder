@@ -20,6 +20,7 @@ class AddPlayerForm extends React.Component {
          <div>
             <h2>Player Form</h2>
             <input type="text" value={this.state.newName} onChange={this.handleChange} />
+            <button onClick={() => this.props.addPlayerProp(this.state.newName)}>Add Player</button> 
          </div>
       );
    }
